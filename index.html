@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abdul Hannan Khan - Front-End Developer Portfolio">
+    <title>Abdul Hannan Khan | Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" sizes="32x32">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation">
+        <div class="nav-content">
+            <div class="logo">AHK</div>
+            <button class="burger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="theme-toggle">
+                    <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+                    <label for="theme-toggle"></label>
+                    <div class="icons">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-label="Introduction">
+        <div class="hero-content">
+            <h1>Hi, I'm Abdul Hannan Khan</h1>
+            <p class="hero-subtitle">Front-End Developer | Creative Thinker | Responsive UI Builder | Growth Mindset</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
+            </div>
+        </div>
+        <div id="three-background"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-label="About me">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/My Picture.jpg" alt="Abdul Hannan Khan" width="400" height="400">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Abdul Hannan Khan, a passionate and dedicated Computer Science student at the National University of Modern Languages (NUML). I have a strong interest in Front-End Web Development and modern software practices.</p>
+                    <p>I enjoy bringing ideas to life through clean, responsive, and interactive websites. My learning journey is currently focused on becoming a MERN Stack Developer, and I actively work on enhancing my problem-solving, logical thinking, and collaboration skills.</p>
+                    <h3>🚀 Current Focus:</h3>
+                    <ul>
+                        <li>Mastering React.js and the MERN Stack</li>
+                        <li>Strengthening problem-solving and algorithmic thinking</li>
+                        <li>Building real-world web projects</li>
+                        <li>Writing clean, efficient, and scalable code</li>
+                    </ul>
+                    <p>💡 Whether it's coding, collaborating, or continuous learning - I'm always ready to grow!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects" aria-label="My projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="api">API</button>
+                <button class="filter-btn" data-filter="firebase">Firebase</button>
+            </div>
+            <div class="project-grid">
+                <!-- Weather App -->
+                <article class="project-card" data-category="javascript,api">
+                    <div class="project-image">
+                        <img src="assets/Weather app.PNG" alt="Weather App Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather App</h3>
+                        <p>A responsive weather application that provides real-time weather information using the OpenWeather API. Features include current weather, forecasts, and location search.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">OpenWeather API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://hannankhan203.github.io/Weather-App/" class="btn primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Hannankhan203/Weather-App" class="btn secondary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Scientific Calculator -->
+                <article class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <img src="assets/Scientific Calculator.PNG" alt="Scientific Calculator Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Scientific Calculator</h3>
+                        <p>A feature-rich scientific calculator with advanced mathematical functions, keyboard support, and a clean user interface.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://hannankhan203.github.io/Scientific-Calculator/" class="btn primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Hannankhan203/Scientific-Calculator" class="btn secondary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Notes App -->
+                <article class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <img src="assets/Notes.PNG" alt="Notes App Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Notes App</h3>
+                        <p>A simple and intuitive notes application for managing your thoughts and ideas.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://hannankhan203.github.io/Notes/" class="btn primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Hannankhan203/Notes" class="btn secondary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Currency Converter -->
+                <article class="project-card" data-category="javascript,api">
+                    <div class="project-image">
+                        <img src="assets/Currency Converter.PNG" alt="Currency Converter Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Currency Converter</h3>
+                        <p>A currency converter application that allows you to convert amounts between different currencies using the Open Exchange API.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Open Exchange API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://hannankhan203.github.io/Currency-Converter/" class="btn primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Hannankhan203/Currency-Converter" class="btn secondary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Coursing Site -->
+                <article class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <img src="assets/Coursing Site.PNG" alt="Coursing Site Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Coursing Site</h3>
+                        <p>A platform for online learning and course management.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://hannankhan203.github.io/Coursing-Site/" class="btn primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Hannankhan203/Coursing-Site" class="btn secondary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Auth Form -->
+                <article class="project-card" data-category="javascript,firebase">
+                    <div class="project-image">
+                        <img src="assets/Authentication Form.PNG" alt="Authentication Form Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Auth Form</h3>
+                        <p>A simple and secure authentication form using Firebase.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://authentication-form-203.netlify.app/" class="btn primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Hannankhan203/Authentication-Form" class="btn secondary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Typing Speed Test -->
+                <article class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <img src="assets/Typing Speed Test.png" alt="Typing Speed Test Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Typing Speed Test</h3>
+                        <p>A fun and challenging typing test to improve your typing speed and accuracy.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://hannankhan203.github.io/Typing-Speed-Test/" class="btn primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Hannankhan203/Typing-Speed-Test" class="btn secondary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Scroll Magic GSAP -->
+                <article class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <img src="assets/Scroll Magic.png" alt="Scroll Magic GSAP Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Scroll Magic GSAP</h3>
+                        <p>A powerful and flexible scroll animation library using GSAP.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">GSAP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://scroll-magic-gsap.netlify.app/" class="btn primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Hannankhan203/Scroll-Magic" class="btn secondary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" aria-label="My skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Responsive Design</li>
+                        <li>React Router Dom</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & Databases</h3>
+                    <ul>
+                        <li>Firebase Authentication</li>
+                        <li>Firebase Database</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Version Control</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>VS Code</li>
+                        <li>Cursor AI</li>
+                        <li>Netlify</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>UI/UX Design</h3>
+                    <ul>
+                        <li>CSS Animations</li>
+                        <li>Animate.style</li>
+                        <li>GSAP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-label="Contact information">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid">
+                <a href="mailto:ak1818375@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>ak1818375@gmail.com</span>
+                </a>
+                <a href="tel:03301375469" class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>03301375469</span>
+                </a>
+                <a href="https://github.com/Hannankhan203" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://x.com/Hannankhan203" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://www.instagram.com/thewebdev_journey/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Abdul Hannan Khan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/three-bg.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html> 
